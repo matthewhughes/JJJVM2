@@ -17,7 +17,7 @@ public class Registers {
         return register[index];
     }
 
-    public void SetReg1( int value, int index){
+    public void SetReg( int value, int index){
         register[index] = value;
     }
 
