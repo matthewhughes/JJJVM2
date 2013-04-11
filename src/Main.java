@@ -13,5 +13,6 @@ public class Main {
     COF.CheckOutputFileExists(args[1]);
     COF.CreateOutputFile(args[1], ".out", "log");
 
+
     }
 }
