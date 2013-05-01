@@ -9,6 +9,18 @@ import java.io.PrintWriter;
  * To change this template use File | Settings | File Templates.
  */
 public class CreateOutputFiles {
+
+    private static String Logfile;
+
+    public static void SetSTDOUT(String FileName){
+        Logfile = FileName;
+    }
+
+    public static String ReturnSTDOUT(){
+        return Logfile;
+    }
+
+
     public static void CheckOutputFileExists(String OutputName){
         String Directory = System.getProperty("user.dir");
         File f = new File(Directory + File.separator + OutputName);

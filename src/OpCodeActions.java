@@ -13,6 +13,10 @@ public class OpCodeActions {
         Registers Reg = new Registers(); // from The Bill
         int Accumulator = Reg.GetAcc();
         Reg.SetReg(Accumulator, RegAdd);
+        if(RegAdd == 24){
+            System.out.println(Registers.GetReg(24));
+            LogClass.STDOUTWrite(CreateOutputFiles.ReturnSTDOUT());
+        }
     }
     public static void  LoadDirect(int RegAdd){
        TestRegBounds(RegAdd);

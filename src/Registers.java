@@ -8,12 +8,12 @@
 public class Registers {
 
 
-    private int[] register = new int[24];
+    private static int[] register = new int[24];
 
-    private int ProgramCounter;
-    private int Accumulator;
+    private static int ProgramCounter;
+    private static int Accumulator;
 
-    public int GetReg(int index){
+    public static int GetReg(int index){
         return register[index];
     }
 
@@ -21,15 +21,15 @@ public class Registers {
         register[index] = value;
     }
 
-    public int GetPC(){
+    public static int GetPC(){
         return ProgramCounter;
     }
 
-    public void SetPC(int value){
-        ProgramCounter = value;
+    public static void IncPC(){
+        ProgramCounter = ProgramCounter + 1;
     }
 
-    public int GetAcc(){
+    public static int GetAcc(){
         return Accumulator;
     }
 
